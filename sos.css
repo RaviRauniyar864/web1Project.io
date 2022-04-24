@@ -1,0 +1,114 @@
+.sos{
+    width: 600px;
+    height: 50px;
+    float: right;
+    margin: 100px 150px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: table;
+    text-align: center;
+}
+.sosText{
+    display: table-cell;
+    vertical-align: middle;
+}
+.gameBox{
+    width: 600px;
+    height: 300px;
+    float: right;
+    margin: 0px 150px 0px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.scoreBox, #spidey, #cryingSpidey, #goblin, .runway{
+    float: left;
+    position: relative;
+}
+.scoreBox{
+    top: 0%;
+    background-color: rgba(255, 255, 255, 0.06);
+    width: 100%;
+    height: 45px;
+}
+.currScore, .target{
+    height: 100%;
+    width: 50%;
+    float: left;
+    text-align: center;
+    display: table;
+}
+.currScore p, .target p{
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#spidey{
+    width: 60px;
+    height: 60px;
+    top: 180px;
+    left: 60px;
+}
+#cryingSpidey{
+    width: 60px;
+    height: 60px;
+    top: 180px;
+    left: 60px;
+    display: none;
+}
+.jump{
+    animation: spideyAnimate 500ms;
+}
+@keyframes spideyAnimate {
+    0%{top: 180px;}
+    30%{top: 120px;}
+    70%{top: 120px;}
+    100%{top: 180px;}
+}
+#spideyImg, #cryingSpideyImg{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+#goblin{
+    width: 30px;
+    height: 30px;
+    top: 210px;
+    left: 510px;
+}
+.slide{
+    animation: goblinAnimate 1s infinite linear;
+}
+@keyframes goblinAnimate {
+    0%{left: 510px;}
+    100%{left: -60px;}
+}
+#goblinImg{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.runway{
+    top: 180px;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    height: 15px;
+}
+.buttons{
+    width: 600px;
+    float: right;
+    margin: 0px 150px;
+}
+.jumpBtn{
+    text-align: center;
+}
+#jump{
+    width: 250px;
+    font-size: 30px;
+    margin: 10px auto;
+}
+.restart{
+    width: 100%;
+    margin: 10px 0px;
+    text-align: center;
+}
